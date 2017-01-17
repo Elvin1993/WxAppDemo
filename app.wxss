@@ -1,0 +1,11 @@
+text {
+    font-family: MicroSoft Yahei;
+}
+
+.user-avatar {
+    border-radius: 50%;
+    border: 2rpx solid #ccc;
+    width: 200rpx;
+    height: 200rpx;
+    margin-top: 150rpx;
+}

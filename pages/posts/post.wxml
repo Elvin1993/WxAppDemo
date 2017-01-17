@@ -1,0 +1,29 @@
+<view>
+    <swiper vertical="true" indicator-dots="true" autoplay="true" interval="5000" duration="800">
+        <swiper-item>
+            <image src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src="http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src="http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg"></image>
+        </swiper-item>
+    </swiper>
+
+    <view class="post-container">
+        <view>
+            <image class="user-avatar" src="/images/avatar.jpg"></image>
+            <text>2015-11-21</text>
+        </view>
+        <image class="preview" src="/images/avatar.jpg"></image>
+        <text>目前，单位的标签来源主要来源于单位网络，如机构网络，企业网络，单位的标签显示为它们在网络分类里的最小子分类即最小子集，如 银行-城商行-江苏-苏州银行，则只显示江苏就可以，但这个江苏是包含在整个机构网络的。一个单位在单位网络里可以分在多个子集下，因此应该单位有多个标签。
+        </text>
+        <view>
+            <icon type="info" size="45" color="green"/>
+            <text>92</text>
+            <icon type="success" size="45" color="rgb(0,255,255)"/>
+            <text>65</text>
+        </view>
+    </view>
+</view>
