@@ -1,80 +1,11 @@
-/* pages/posts/post.wxss */
+@import './post-item/post-item-template.wxss';
+
 swiper {
-    width: 100%;
-    height: 500rpx;
+  width: 100%;
+  height: 500rpx;
 }
 
 swiper image {
-    width: 100%;
-    height: 500rpx;
+  width: 100%;
+  height: 500rpx;
 }
-
-.post-container {
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    border-bottom: 1px solid #ededed;
-    border-top: 1px solid #ededed;
-    margin: 20rpx 0 40rpx 0;
-    padding-bottom: 5px;
-}
-
-.post-header {
-    margin: 10rpx 0 20rpx 10rpx;
-}
-
-
-.post-author-avatar {
-    width: 60rpx;
-    height: 60rpx;
-    margin: 0;
-    vertical-align: middle;
-}
-
-.post-date {
-    margin-left: 20rpx;
-    font-size: 26rpx;
-    vertical-align: middle;
-}
-
-.post-title {
-    font-size: 34rpx;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 10px;
-    margin-left: 10px;
-}
-
-.post-image {
-    width: 100%;
-    height: 340rpx;
-    margin: 15rpx 0;
-}
-
-.post-content {
-    color: #666;
-    font-size: 28rpx;
-    margin-bottom: 20rpx;
-    margin-left: 20rpx;
-    letter-spacing: 2rpx;
-    line-height: 40rpx;
-}
-
-.post-like {
-    font-size: 13px;
-    flex-direction: row;
-    line-height: 15px;
-    margin-left: 20rpx;
-}
-
-.post-like icon {
-    vertical-align: middle;
-    font-size: 16px;
-    margin-right: 8px;
-}
-
-.post-like text {
-    vertical-align: middle;
-    margin-right: 14rpx;
-}
-

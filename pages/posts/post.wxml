@@ -1,23 +1,11 @@
+<import src="post-item/post-item-template.wxml" />
 <view>
     <swiper indicator-dots="true" autoplay="true" interval="5000" duration="800" >
         <swiper-item wx:for="{{advertList}}" wx:key="{{key}}">
             <image src="{{item}}"></image>
         </swiper-item> 
     </swiper>
-
-    <view class="post-container" wx:for="{{postList}}" wx:key="{{item.id}}">
-        <view class="post-header">
-            <image class="user-avatar post-author-avatar" src="{{item.userIcon}}"></image>
-            <text class="post-date">{{item.date}}</text>
-        </view>
-         <text class="post-title">{{item.title}}</text>
-        <image class="post-image" src="{{item.image}}"></image>
-        <text class="post-content">{{item.content}}</text>
-        <view class="post-like">
-            <icon type="info" color="#ccc" bindtap="addLike"  indexx="1"/>
-            <text>{{item.like}}</text>
-            <icon type="success" color="#ccc"/>
-            <text>{{item.zan}}</text>
-        </view>
-    </view>
+    <block wx:for="{{postList}}" wx:key="{{item.id}}">
+        <template is="postItem" data="{{...item, index}}"/>
+    </block>
 </view>

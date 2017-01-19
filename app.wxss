@@ -1,5 +1,6 @@
 text {
     font-family: MicroSoft Yahei;
+    font-size: 28rpx;
 }
 
 .user-avatar {
@@ -8,4 +9,11 @@ text {
     width: 200rpx;
     height: 200rpx;
     margin-top: 150rpx;
+}
+
+.user-avatar-sm {
+    width: 60rpx;
+    height: 60rpx;
+    margin: 0;
+    vertical-align: middle;
 }

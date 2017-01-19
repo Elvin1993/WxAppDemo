@@ -1,0 +1,15 @@
+<view class="post-detail">
+    <image class="post-image" src="{{postData.image}}" />
+    <image class="audio" src="/images/music-start.png" />
+    <view class="post-detail-header">
+      <image class="user-avatar user-avatar-sm" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg"></image>
+      <text class="post-detail-date">发表于  24小时前</text>
+    </view>
+    <title class="post-detail-title">王者荣耀 王昭君屌不屌</title>
+    <view class="tool">
+        <view class="line" />
+        <image src="/images/collection.png" />
+        <image src="/images/share.png" />
+    </view>
+    <text class="post-detail-content">王者荣耀 王昭君屌不屌? 还用问吗？</text>
+</view>

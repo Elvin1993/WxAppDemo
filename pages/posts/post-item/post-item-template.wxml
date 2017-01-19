@@ -1,0 +1,18 @@
+<template name="postItem">
+  <view class="post-container" bindtap="showDetail" data-id="{{id}}">
+    <view class="post-header">
+      <image class="user-avatar user-avatar-sm" src="{{userIcon}}"></image>
+      <text class="post-date">{{date}}</text>
+    </view>
+    <text class="post-title">{{title}}</text>
+    <image class="post-image" src="{{image}}"></image>
+    <text class="post-content">{{content}}</text>
+    <view class="post-like">
+        <image src="/images/view.png" catchtap="addLike" data-name="like" data-index="{{index}}" />
+        <text>{{like}}</text>
+        <image src="/images/star.png" catchtap="addLike" data-name="zan" data-index="{{index}}" />
+        <text>{{zan}}</text>
+      </view>
+    </view>
+  
+</template>
