@@ -1,15 +1,15 @@
 <view class="post-detail">
-    <image class="post-image" src="{{postData.image}}" />
-    <image class="audio" src="/images/music-start.png" />
+    <image class="post-image" src="{{musicStatus ? postData.music.image : postData.image}}" />
+    <image class="audio" src="{{musicStatus ? '/images/music-stop.png' : '/images/music-start.png'}}" catchtap="handlerMusicCtr" />
     <view class="post-detail-header">
-      <image class="user-avatar user-avatar-sm" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg"></image>
-      <text class="post-detail-date">发表于  24小时前</text>
+      <image class="user-avatar user-avatar-sm" src="{{postData.userIcon}}" ></image>
+      <text class="post-detail-date">发表于  {{postData.date}}{{musicStatus}}</text>
     </view>
-    <title class="post-detail-title">王者荣耀 王昭君屌不屌</title>
+    <title class="post-detail-title">{{postData.title}}</title>
     <view class="tool">
         <view class="line" />
-        <image src="/images/collection.png" />
-        <image src="/images/share.png" />
+        <image src="{{postData.collected ? '/images/collection.png' : '/images/collection-anti.png'}}" catchtap="onCollectionTap" />
+        <image src="/images/share.png" catchtap="showShare"/>
     </view>
-    <text class="post-detail-content">王者荣耀 王昭君屌不屌? 还用问吗？</text>
+    <text class="post-detail-content">{{postData.content}}</text>
 </view>
