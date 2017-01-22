@@ -1,8 +1,8 @@
 import { postList } from '../../../data/post-list'
+var app = getApp()
 
 Page({
   data: {
-    musicStatus: false
   },
   onLoad: function (options) {
     // 页面初始化 options为页面跳转所带来的参数
@@ -17,19 +17,19 @@ Page({
     } else {
       wx.setStorageSync('collectedList', { [id]: false })
     }
-    this.setData({ postData, id })
+    this.setData({ postData, id, musicStatus: id == app.globalData.g_musicStatus })
 
     wx.onBackgroundAudioPlay(function() {
       that.setData({
         musicStatus: true
       })
-       console.log(that.musicStatus)
+      app.globalData.g_musicStatus = id
     })
     wx.onBackgroundAudioStop(function() {
       that.setData({
         musicStatus: false
       })
-      console.log(that.musicStatus)
+      app.globalData.g_musicStatus = false
     })
   },
   onReady: function () {
@@ -82,6 +82,7 @@ Page({
   },
   handlerMusicCtr: function (e) {
     let { postData: {music}, musicStatus } = this.data
+    console.log(musicStatus)
 
     if (musicStatus) {
       wx.stopBackgroundAudio()
