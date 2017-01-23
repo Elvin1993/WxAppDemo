@@ -2,7 +2,7 @@
 <view>
     <swiper indicator-dots="true" autoplay="true" interval="5000" duration="800" >
         <swiper-item wx:for="{{advertList}}" wx:key="{{key}}">
-            <image src="{{item}}"></image>
+            <image src="{{item.img}}"  bindtap="showDetail" data-id="{{item.id}}"></image>
         </swiper-item> 
     </swiper>
     <block wx:for="{{postList}}" wx:key="{{item.id}}">

@@ -1,8 +1,8 @@
 module.exports = {
     "advertList": [
-        "http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg",
-        "http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg",
-        "http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg"
+        {img: "http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg", id: 1},
+        {img: "http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg", id: 2},
+        {img: "http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg", id: 3},
     ],
     "postList": [
         {
@@ -26,6 +26,21 @@ module.exports = {
             "date": "2015-11-21",
             "title": "天女散花",
             "image": "http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg",
+            "content": "幸福大厦范德萨发地方萨芬，范德萨",
+            "zan": 1,
+            "like": 20,
+            "music": {
+                url: "http://ws.stream.qqmusic.qq.com/C100002I8eGJ28BI17.m4a?fromtag=38",
+                name: "谭咏麟：朋友",
+                image: "http://y.gtimg.cn/music/photo_new/T002R150x150M000004eGsCN3SUheO.jpg?max_age=2592000"
+            }
+        },
+        {
+            "id": 3,
+            "userIcon": "/images/avatar.jpg",
+            "date": "2015-11-12",
+            "title": "天女散花1",
+            "image": "http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg",
             "content": "幸福大厦范德萨发地方萨芬，范德萨",
             "zan": 1,
             "like": 20,

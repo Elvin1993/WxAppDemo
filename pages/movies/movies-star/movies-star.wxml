@@ -1,0 +1,12 @@
+<template name="movies-star">
+    <view class="movies-star">
+        <view class="star-list">
+            <image class="img" src="/images/star.png"></image>
+            <image src="/images/star.png"></image>
+            <image src="/images/star.png"></image>
+            <image src="/images/star.png"></image>
+            <image src="/images/star.png"></image>
+        </view>
+        <text class="score">9.3</text>
+    </view>
+</template>

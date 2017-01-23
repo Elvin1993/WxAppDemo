@@ -25,8 +25,8 @@ Page({
     //   wx.navigateTo({
     //     url: '../posts/post'
     //   })
-    wx.redirectTo({
-      url: '../posts/post'
+    wx.switchTab({
+      url: '/pages/movies/movies'
     })
   }
 })

@@ -1,0 +1,23 @@
+.movies-star {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15rpx;
+    
+}
+
+.movies-star .star-list {
+    display: flex;
+    flex-direction: row;
+    height: 17rpx;
+}
+
+.movies-star .star-list image {
+    height: 17rpx;
+    width: 17rpx;
+    padding-right: 7rpx;
+}
+
+.movies-star .score {
+    color: red;
+    padding: 0 10rpx;
+}
